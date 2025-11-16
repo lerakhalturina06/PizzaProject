@@ -1,0 +1,22 @@
+{
+    "name": "your-github-username/pizza-project",
+    "description": "A project that uses the pizza store library",
+    "type": "project",
+    "require": {
+        "php": "^8.0",
+        "your-github-username/pizza-store-lib": "dev-main"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/your-github-username/pizza-store-lib"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PizzaProject\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
